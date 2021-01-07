@@ -1,0 +1,144 @@
+.Auth {
+  min-height: 94vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.Auth .card {
+  width: 40em;
+  height: 40em;
+  background: #f8f8f8;
+  border-radius: 10px;
+  -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+          box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.Auth .card h2 {
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #393e46;
+  font-family: "Roboto", sans-serif;
+}
+
+.Auth .card p {
+  margin-top: 1em;
+  color: #e23e57;
+  background: #ffcb9b;
+  padding: 0.5em;
+  border-radius: 10px;
+  display: none;
+}
+
+.Auth .card img {
+  width: 159px;
+  height: 146px;
+  opacity: 0.5;
+}
+
+.Auth .card img:hover {
+  opacity: 1;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  cursor: pointer;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.Auth .card form {
+  text-align: center;
+}
+
+.Auth .card form .Input {
+  margin: 2em;
+  border: none;
+  outline: none;
+  -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+          box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.Auth .card form .Username,
+.Auth .card form .Password {
+  padding: 1.5em 7em;
+  border-radius: 10px;
+}
+
+.Auth .card form .Username:placeholder-shown,
+.Auth .card form .Password:placeholder-shown {
+  font-size: 0.9rem;
+  color: #393e46;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+
+.Auth .card form .Submit {
+  padding: 1.5em 4em;
+  font-size: 0.9rem;
+  background: #1fab89;
+  border-radius: 10px;
+  color: #f8f8f8;
+  font-weight: 600;
+}
+
+.Auth .card form label {
+  color: #393e46;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+}
+
+@media screen and (max-width: 960px) {
+  .Auth .card {
+    width: 20em;
+    height: 30em;
+  }
+  .Auth .card h2 {
+    font-size: 1.5rem;
+  }
+  .Auth .card img {
+    width: 81px;
+    height: 68px;
+  }
+  .Auth .card img:hover {
+    opacity: 0.5;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  .Auth .card form .Input {
+    margin: 1em;
+  }
+  .Auth .card form .Username,
+  .Auth .card form .Password {
+    padding: 1em 4em;
+  }
+  .Auth .card form .Username:placeholder-shown,
+  .Auth .card form .Password:placeholder-shown {
+    font-size: 0.8rem;
+  }
+  .Auth .card form .Submit {
+    padding: 1em 2em;
+    font-size: 0.9rem;
+  }
+  .Auth .card form label {
+    font-size: 0.9rem;
+  }
+}
+/*# sourceMappingURL=Auth.module.css.map */

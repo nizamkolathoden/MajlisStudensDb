@@ -1,0 +1,69 @@
+$CardbackgroundColor: #f8f8f8;
+$boxShadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+  rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+$Headingfontsize: 1.8rem;
+$MobilefontSize: 1.5rem;
+$MobileTextFontSize: 0.9rem;
+$MobileMiniFontSize: 0.8rem;
+$textFontsize: 1rem;
+$MiniFontSize: 0.9rem;
+$Textcolor: #393e46;
+$fontfamily: "Roboto", sans-serif;
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 6vh;
+    background-color: $CardbackgroundColor;
+    box-shadow: $boxShadow;
+    .logo{
+        color: $Textcolor;
+        letter-spacing: 3px;
+        font-size: $Headingfontsize;
+    }
+    .navLinks{
+        display: flex;
+        justify-content: space-around;
+        width: 30%;
+        list-style: none;
+        font-size: $textFontsize;
+    }
+    .Burger{
+        border: none;
+        outline: none;
+        background: none;
+        display: none;
+    }
+    .navActive{
+        display: flex;
+        justify-content: space-around;
+        width: 30%;
+        list-style: none;
+        font-size: $textFontsize;
+    }
+}
+@media screen and (max-width: 960px){
+    nav{
+        .logo{
+            font-size: $MobilefontSize;
+        }
+        .navActive{
+            display: none;
+        }
+        .navLinks{
+            position: absolute;
+            right: 0;
+            height: 10vh;
+            top: 6vh;
+            box-shadow: $boxShadow;
+            background: $CardbackgroundColor;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .Burger{
+            display: block;
+        }
+    }
+  
+}

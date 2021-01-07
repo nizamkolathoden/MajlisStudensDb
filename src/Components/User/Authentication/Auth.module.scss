@@ -1,0 +1,127 @@
+$CardbackgroundColor: #f8f8f8;
+$boxShadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+  rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+$Headingfontsize: 1.8rem;
+$MobilefontSize: 1.5rem;
+$MobileTextFontSize: 0.9rem;
+$MobileMiniFontSize: 0.8rem;
+$textFontsize: 1rem;
+$MiniFontSize: 0.9rem;
+$Textcolor: #393e46;
+$fontfamily: "Roboto", sans-serif;
+
+.Auth {
+  min-height: 94vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .card {
+    width: 40em;
+    height: 40em;
+    background: $CardbackgroundColor;
+    border-radius: 10px;
+    box-shadow: $boxShadow;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    h2 {
+      font-size: $Headingfontsize;
+      font-weight: 500;
+      color: $Textcolor;
+      font-family: $fontfamily;
+    }
+    p {
+      margin-top: 1em;
+      color: #e23e57;
+      background: #ffcb9b;
+      padding: 0.5em;
+      border-radius: 10px;
+      display: none;
+    }
+    img {
+      width: 159px;
+      height: 146px;
+      opacity: 0.5;
+      &:hover {
+        opacity: 1;
+        transition: 0.3s ease;
+        cursor: pointer;
+        transform: scale(1.1);
+      }
+    }
+    form {
+      text-align: center;
+      .Input {
+        margin: 2em;
+        border: none;
+        outline: none;
+        box-shadow: $boxShadow;
+      }
+      .Username,
+      .Password {
+        padding: 1.5em 7em;
+        border-radius: 10px;
+        &:placeholder-shown {
+          font-size: $MiniFontSize;
+          color: $Textcolor;
+          font-family: $fontfamily;
+          font-weight: 400;
+        }
+      }
+      .Submit {
+        padding: 1.5em 4em;
+        font-size: $MiniFontSize;
+        background: #1fab89;
+        border-radius: 10px;
+        color: $CardbackgroundColor;
+        font-weight: 600;
+      }
+      label {
+        color: $Textcolor;
+        font-family: $fontfamily;
+        font-size: $textFontsize;
+      }
+    }
+  }
+}
+@media screen and (max-width: 960px) {
+  .Auth {
+    .card {
+      width: 20em;
+      height: 30em;
+      h2{
+          font-size: $MobilefontSize;
+      }
+      img{
+          width: 81px;
+          height: 68px;
+          &:hover{
+              opacity: 0.5;
+              transform: scale(1);
+          }
+      }
+      form{
+      .Input {
+        margin: 1em
+      }
+      .Username,
+      .Password{
+        padding: 1em 4em;
+        &:placeholder-shown{
+            font-size: $MobileMiniFontSize;
+
+        }
+
+      }
+      .Submit {
+          padding: 1em 2em;
+          font-size: $MobileTextFontSize;
+      }
+      label{
+          font-size: $MobileTextFontSize;
+      }
+      }
+    }
+  }
+}
